@@ -1,8 +1,25 @@
-function ScrollRight (menu) {
-    document.getElementById(menu).scrollLeft += 100;
+// right event
+function rightScroll(carousel, rightArrow) {
 
-};
+    const scroll = document.querySelector(carousel);
 
-function ScrollLeft (menu) {
-    document.getElementById(menu).scrollLeft -= 100;
-};
+    const right = document.querySelector(rightArrow);
+
+    right.addEventListener("click", () => {
+        scroll.scrollLeft += scroll.offsetWidth;
+    })
+
+}
+
+// left event
+function leftScroll(carousel, leftArrow) {
+
+    const scroll = document.querySelector(carousel);
+
+    const left = document.querySelector(leftArrow);
+
+    left.addEventListener("click", () => {
+        scroll.scrollLeft -= scroll.offsetWidth;
+    })
+
+}

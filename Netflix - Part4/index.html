@@ -50,11 +50,11 @@
    
 
     <main class="text-white font-bold">
-      
+    <section class="carousel">
     <div class="flex flex-col" id="container">
         <p class="ml-10">Watch It Again</p>
       <div id="Netflix" class="flex flex-row space-x-8 cursor-pointer no-scrollbar overflow-x-scroll">
-        <button class="hover:fill-black leftButton absolute" onclick="ScrollLeft('Neflix')">
+        <button class="leftArrow hover:fill-black absolute" onClick="leftScroll('.carousel','.leftArrow')">
           <svg class="mt-20 w-8 fill-white" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
          <path d="M413.476,398.302L258.215,245L413.476,91.69L324.619,0L76.524,245l248.094,245L413.476,398.302z M120.086,245L324.14,43.502
@@ -97,7 +97,7 @@
          <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/mha.jpg">
            <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/shippuden.jpg">
          <img class="pt-8 ml-10 h-48 w-64" src="/assets/Logo/so.jpg">
-         <button class="rightButton" onclick="ScrollRight('Neflix')">
+         <button class="rightArrow" onClick="rightScroll('.carousel','rightArrow')">
           <svg class="mt-0 rotate-180 w-8 fill-white" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="0 0 490 490" style="enable-background:new 0 0 490 490;" xml:space="preserve">
           <path d="M413.476,398.302L258.215,245L413.476,91.69L324.619,0L76.524,245l248.094,245L413.476,398.302z M120.086,245L324.14,43.502
@@ -142,6 +142,7 @@
       
        
       </div>
+    </section>
       
       <container  class="ml-5 space-x-4 mt-8 mb-2 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-7 gap-4 rounded ">
         <a href="#">
